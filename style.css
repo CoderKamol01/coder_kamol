@@ -1,0 +1,76 @@
+/*main style*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-family: consolas;
+    font-size: 10px;
+}
+.container
+{
+    width: 91vw;
+    background-color: #bdaeae;
+    padding: 5rem;
+}
+/* webkit */
+::-webkit-scrollbar
+{
+    width: 1rem;
+}
+::-webkit-scrollbar-track
+{
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 2rem;
+    background: rgb(255, 255, 255);
+}
+/*cards*/
+.card
+{
+    width: 10vw;
+    height: 13.5rem;
+    background-color: #03706b;
+    margin:  5rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.card img
+{
+    width: 10rem;
+    border-radius: 50%;
+    padding: 2rem;
+}
+.card h2, p
+{
+    padding: 2rem;
+}
+.card h2
+{
+    font-size: 3.5rem;
+}
+.card p
+{
+    font-size: 2rem;
+}
+.card:hover
+{
+    width: 75vw;
+    transition: 800ms;
+    transition-timing-function: ease-out;
+    transition-delay: 0ms;
+}
+@media only screen and (max-width: 412px)
+{
+    html
+    {
+        font-size: 3px;
+    }
+}
