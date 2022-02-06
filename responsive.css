@@ -1,0 +1,14 @@
+@media only screen and (max-width: 500px) {
+    html
+    {
+        font-size: 4px;
+    }
+    .container
+    {
+        height: 30vh;
+    }
+    .container .animate1
+    {
+        height: 30vh;
+    }
+}

@@ -1,6 +1,6 @@
-/*main style*/
 *
 {
+    z-index: 1;
     margin: 0;
     padding: 0;
 }
@@ -11,66 +11,46 @@ html
 }
 .container
 {
-    width: 91vw;
-    background-color: #bdaeae;
-    padding: 5rem;
+    position: relative;
+    width: 70vw;
+    height: 50vh;
+    background-color: #ffffff;
+    margin: 18rem auto;
+    z-index: 1;
 }
-/* webkit */
-::-webkit-scrollbar
+.container h1
 {
-    width: 1rem;
+    font-size: 10rem;
+    text-align: center;
+    z-index: 1;
+    color: #ffffff;
+    padding-top: 5rem;
 }
-::-webkit-scrollbar-track
+.container .animate1
 {
+    position: absolute;
+    width: 0vw;
+    height: 50vh;
     background-color: #000000;
-}
-::-webkit-scrollbar-thumb
-{
-    border-radius: 2rem;
-    background: rgb(255, 255, 255);
-}
-/*cards*/
-.card
-{
-    width: 10vw;
-    height: 13.5rem;
-    background-color: #03706b;
-    margin:  5rem auto;
-    padding: 2rem;
+    top: 0px;
+    animation: 5s animate 0s ease-in-out infinite;
     border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
 }
-.card img
+@keyframes animate
 {
-    width: 10rem;
-    border-radius: 50%;
-    padding: 2rem;
-}
-.card h2, p
-{
-    padding: 2rem;
-}
-.card h2
-{
-    font-size: 3.5rem;
-}
-.card p
-{
-    font-size: 2rem;
-}
-.card:hover
-{
-    width: 75vw;
-    transition: 800ms;
-    transition-timing-function: ease-out;
-    transition-delay: 0ms;
-}
-@media only screen and (max-width: 412px)
-{
-    html
+    0%
     {
-        font-size: 3px;
+        width: 0vw;
+        z-index: -1;
+    }
+    50%
+    {
+        width: 70vw;
+        z-index: -1;
+    }
+    100%
+    {
+        width: 0vw;
+        z-index: -1;
     }
 }
