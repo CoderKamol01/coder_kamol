@@ -12,3 +12,18 @@
         height: 30vh;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    html
+    {
+        font-size: 4px;
+    }
+    .container
+    {
+        height: 25vh;
+    }
+    .container .animate1
+    {
+        height: 25vh;
+    }
+}
